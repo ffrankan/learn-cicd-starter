@@ -31,7 +31,7 @@ func respondWithJSON(w http.ResponseWriter, code int, payload interface{}) {
 	}
 	w.WriteHeader(code)
 	if _, err := w.Write(dat); err != nil {
-    // 根据需要记录日志或处理错误
-    log.Printf("failed to write response: %v", err)
-}
+		// 根据需要记录日志或处理错误
+		log.Printf("failed to write response: %v", err)
+	}
 }
